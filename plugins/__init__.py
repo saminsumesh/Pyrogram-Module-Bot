@@ -30,3 +30,6 @@ class zac(object):
 	async def stop(self, *args):
 		super().stop()
 		print("Bot stopped, Bye.")
+
+app = zac()
+app.run()
