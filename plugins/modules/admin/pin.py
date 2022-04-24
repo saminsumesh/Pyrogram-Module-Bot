@@ -1,8 +1,6 @@
 from pyrogram import Client as app, filters
 from pyrogram.types import (
-	Message,
-	InlineKeyboardButton,
-	InlineKeyboardMarkup
+	Message
 	)
 
 @app.on_message(filters.command("pin"))
