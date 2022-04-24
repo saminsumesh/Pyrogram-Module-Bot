@@ -23,8 +23,8 @@ class zac(object):
 	async def start(self):
 		super().start()
 		me = await self.get_me()
-		BOT_USERNAME = me.username
-		BOT_NAME = me.first_name
+		bot.BOT_USERNAME = me.username
+		bot.BOT_NAME = me.first_name
 		self.username = "@" + me.username
 		print(f"{me.first_name} with Pyrogram {__version__}, (Layer {layer}), Started on {me.username}.")
 		
