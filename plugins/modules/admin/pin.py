@@ -7,7 +7,7 @@ from pyrogram.types import (
 
 @app.on_message(filters.command("pin"))
 async def pin(app, message: Message):
-	if not message.chat.type == "private":
+	if message.chat.type == "private":
 		await app.send_message(
 			message.chat.id,
 			text="**This command is only for group not for your pm**",
