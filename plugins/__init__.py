@@ -5,7 +5,7 @@ from config import Config
 class bot(object):
 	BOT_NAME = None
 	BOT_USERNAME = None
-      BOT_ID = None
+        BOT_ID = None
       
 
 class zac(object):
