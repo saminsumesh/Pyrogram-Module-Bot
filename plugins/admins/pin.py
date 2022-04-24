@@ -4,7 +4,6 @@ from pyrogram.types import (
 	InlineKeyboardButton,
 	InlineKeyboardMarkup
 	)
-from helpers.admin.admin_func import admin_check
 
 @app.on_message(filters.command("pin"))
 async def pin(app, message: Message):
