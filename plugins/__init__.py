@@ -2,10 +2,9 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from config import Config
 
-class bot(object):
-	BOT_NAME = None
-	BOT_USERNAME = None
-        BOT_ID = None
+BOT_USERNAME = None
+BOT_NAME = None
+BOT_ID = None
       
 
 class zac(object):
@@ -23,8 +22,8 @@ class zac(object):
 	async def start(self):
 		super().start()
 		me = await self.get_me()
-		bot.BOT_USERNAME = me.username
-		bot.BOT_NAME = me.first_name
+		BOT_USERNAME = me.username
+		BOT_NAME = me.first_name
 		self.username = "@" + me.username
 		print(f"{me.first_name} with Pyrogram {__version__}, (Layer {layer}), Started on {me.username}.")
 		
