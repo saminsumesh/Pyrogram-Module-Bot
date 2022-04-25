@@ -13,14 +13,14 @@ async def help(app, m: Message):
 	await message.reply(
 		text=Config.HELP_TXT,
 		btn = [[
-			  InlineKeyboardButton("Admin", callback_data="admin"),
-			  InlineKeyboardButton("Micro", callback_data="micro")
-			],[
-			  InlineKeyboardButton("Instance", callback_data="inst"),
-			  InlineKeyboardButton("Pico", callback_data="pico")
-			],[
-			  InlineKeyboardButton("Back", callback_data="start")
-			]]
+			InlineKeyboardButton("Admin", callback_data="admin"),
+			InlineKeyboardButton("Micro", callback_data="micro")
+		      ],[
+			InlineKeyboardButton("Instance", callback_data="inst"),
+			InlineKeyboardButton("Pico", callback_data="pico")
+		      ],[
+			InlineKeyboardButton("Back", callback_data="start")
+		       ]]
 		reply_markup=InlineKeyboardMarkup(btn)
 	)
 
