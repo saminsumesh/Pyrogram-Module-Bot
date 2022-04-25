@@ -30,23 +30,28 @@ async def cb_data(app, query):
 		await query.message.edit(
 			text=f"Hi {query.from_user.mention},\nThis is an simple pyrogram module bot, Free to use and it's opensource,\nIf you find any struggles then Hit /help for a proper knowledge to use this bot,\nFor Source use /source"
 			)
+			
 	elif query.data == "close":
 		await query.message.delete()
-      elif query.data == "admin":
-            await query.message.edit(
-            	text=Config.ADMIN_TXT
-            )
-      elif query.data == "micro":
-      	await query.message.edit(
-      		text=Config.MICRO_TXT
-      	)
-      elif query.data == "inst":
-      	await query.message.edit(
-      		text=Config.INST_TXT
-      	)
-      elif query.data == "pico":
-      	await query.message.edit(
-      		text=Config.PICO_TXT
-      	)
+		
+        elif query.data == "admin":
+                await query.message.edit(
+            	        text=Config.ADMIN_TXT
+                )
+            
+        elif query.data == "micro":
+      	        await query.message.edit(
+      		        text=Config.MICRO_TXT
+      	        )
+      	
+        elif query.data == "inst":
+      	        await query.message.edit(
+      		        text=Config.INST_TXT
+      	        )
+      	
+        elif query.data == "pico":
+      	        await query.message.edit(
+      		        text=Config.PICO_TXT
+          	)
       
                     
