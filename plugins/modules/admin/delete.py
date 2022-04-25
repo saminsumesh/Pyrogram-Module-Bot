@@ -4,7 +4,7 @@ from pyrogram.types import (
 	Message
 	)
 	
-@app.on_message(filters.command("del") & filters.group=6)
+@app.on_message(filters.command("del"))
 async def del_msg(app, message: Message):
 	if message.chat.type == "private":
 		return await message.reply_to_message.delete()
