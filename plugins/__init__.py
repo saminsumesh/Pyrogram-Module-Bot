@@ -7,7 +7,7 @@ BOT_NAME = None
 BOT_ID = None
       
 
-class zac(object):
+class zac(Client):
 	
 	def __init__(self):
 		super().__init__(
